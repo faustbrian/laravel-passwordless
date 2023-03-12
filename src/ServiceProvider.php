@@ -8,10 +8,10 @@ use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Event;
 use PreemStudio\Passwordless\Http\Middleware\PassphraseGuard;
 use PreemStudio\Passwordless\Listeners\RequirePassphrase;
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use PreemStudio\Jetpack\Package\AbstractServiceProvider;
+use PreemStudio\Jetpack\Package\Package;
 
-final class ServiceProvider extends PackageServiceProvider
+final class ServiceProvider extends AbstractServiceProvider
 {
     public function configurePackage(Package $package): void
     {
