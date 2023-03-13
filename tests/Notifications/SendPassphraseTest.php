@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit\Notifications;
+namespace Tests\Notifications;
 
 use PreemStudio\Passwordless\Notifications\SendPassphrase;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit\Listeners;
+namespace Tests\Listeners;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Notification;

@@ -6,22 +6,12 @@ namespace PreemStudio\Passwordless;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Event;
+use PreemStudio\Jetpack\Package\AbstractServiceProvider;
 use PreemStudio\Passwordless\Http\Middleware\PassphraseGuard;
 use PreemStudio\Passwordless\Listeners\RequirePassphrase;
-use PreemStudio\Jetpack\Package\AbstractServiceProvider;
-use PreemStudio\Jetpack\Package\Package;
 
 final class ServiceProvider extends AbstractServiceProvider
 {
-    public function configurePackage(Package $package): void
-    {
-        $package
-            ->name('laravel-passwordless')
-            ->hasViews()
-            ->hasRoute('web')
-            ->hasMigration('create_package_tables');
-    }
-
     public function bootingPackage(): void
     {
         $this->bootEventListeners();
