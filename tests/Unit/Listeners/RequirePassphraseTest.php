@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Tests\Listeners;
+namespace Tests\Unit\Listeners;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Notification;
 use PreemStudio\Passwordless\Listeners\RequirePassphrase;
 use PreemStudio\Passwordless\Notifications\SendPassphrase;
-use Tests\User;
+use Tests\Fixtures\User;
 
 beforeEach(fn () => $this->subject = new RequirePassphrase);
 

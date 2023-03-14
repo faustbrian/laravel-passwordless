@@ -4,19 +4,20 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use Laravel\Fortify\FortifyServiceProvider;
-use Orchestra\Testbench\TestCase as Orchestra;
-use PreemStudio\Passwordless\ServiceProvider;
-use Spatie\LaravelData\LaravelDataServiceProvider;
+use PreemStudio\Jetpack\TestBench\AbstractPackageTestCase;
 
-abstract class TestCase extends Orchestra
+abstract class TestCase extends AbstractPackageTestCase
 {
-    protected function getPackageProviders($app): array
+    protected function getRequiredServiceProviders(): array
     {
         return [
-            LaravelDataServiceProvider::class,
-            FortifyServiceProvider::class,
-            ServiceProvider::class,
+            \Spatie\LaravelData\LaravelDataServiceProvider::class,
+            \Laravel\Fortify\FortifyServiceProvider::class,
         ];
+    }
+
+    protected function getServiceProviderClass(): string
+    {
+        return \PreemStudio\Passwordless\ServiceProvider::class;
     }
 }

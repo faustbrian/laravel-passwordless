@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Http\Controllers;
+namespace Tests\Feature\Http\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Route;
