@@ -10,13 +10,13 @@ use PreemStudio\Passwordless\Listeners\RequirePassphrase;
 use PreemStudio\Passwordless\Notifications\SendPassphrase;
 use Tests\Fixtures\User;
 
-beforeEach(fn () => $this->subject = new RequirePassphrase);
+beforeEach(fn () => $this->subject = new RequirePassphrase());
 
 it('should send a notification', function (): void {
     Notification::fake();
 
     $this->subject->handle((object) [
-        'user' => $user = new User,
+        'user' => $user = new User(),
     ]);
 
     Notification::assertSentTo($user, SendPassphrase::class);
@@ -28,7 +28,7 @@ it('should not send a notification if the user is already authenticated', functi
     Auth::shouldReceive('viaRemember')->once()->andReturn(true);
 
     $this->subject->handle((object) [
-        'user' => new User,
+        'user' => new User(),
     ]);
 
     Notification::assertNothingSent();

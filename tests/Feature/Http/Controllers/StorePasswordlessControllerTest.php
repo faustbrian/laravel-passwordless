@@ -17,7 +17,7 @@ it('should log out the user and clear the session if the passphrase has expired'
 
     $this
         ->withSession([
-            AuthSession::PASSPHRASE            => 'passphrase',
+            AuthSession::PASSPHRASE => 'passphrase',
             AuthSession::PASSPHRASE_EXPIRATION => Carbon::parse('2020-01-01 11:00:00')->timestamp,
         ])
         ->post('/_test')
@@ -34,7 +34,7 @@ it('should throw an exception if the passphrase is invalid', function (): void {
 
     $this
         ->withSession([
-            AuthSession::PASSPHRASE            => 'passphrase',
+            AuthSession::PASSPHRASE => 'passphrase',
             AuthSession::PASSPHRASE_EXPIRATION => Carbon::parse('2020-01-01 12:05:00')->timestamp,
         ])
         ->post('/_test')
@@ -50,7 +50,7 @@ it('should clear the session and execute the fortify login response', function (
 
     $this
         ->withSession([
-            AuthSession::PASSPHRASE            => 'passphrase',
+            AuthSession::PASSPHRASE => 'passphrase',
             AuthSession::PASSPHRASE_EXPIRATION => Carbon::parse('2020-01-01 12:05:00')->timestamp,
         ])
         ->post('/_test', ['passphrase' => 'passphrase'])

@@ -6,7 +6,7 @@ namespace PreemStudio\Passwordless\Enums;
 
 final class AuthSession
 {
-    const PASSPHRASE = 'passphrase';
+    public const PASSPHRASE = 'passphrase';
 
-    const PASSPHRASE_EXPIRATION = 'passphrase_expiration';
+    public const PASSPHRASE_EXPIRATION = 'passphrase_expiration';
 }

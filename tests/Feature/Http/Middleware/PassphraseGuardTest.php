@@ -25,7 +25,7 @@ it('should log out the user if the passphrase has expired', function (): void {
 
     $this
         ->withSession([
-            AuthSession::PASSPHRASE            => 'passphrase',
+            AuthSession::PASSPHRASE => 'passphrase',
             AuthSession::PASSPHRASE_EXPIRATION => Carbon::parse('2020-01-01 11:00:00')->timestamp,
         ])
         ->get('/_test')
@@ -42,7 +42,7 @@ it('should complete te request if its name starts with [login]', function (): vo
 
     $this
         ->withSession([
-            AuthSession::PASSPHRASE            => 'passphrase',
+            AuthSession::PASSPHRASE => 'passphrase',
             AuthSession::PASSPHRASE_EXPIRATION => Carbon::parse('2020-01-01 12:05:00')->timestamp,
         ])
         ->get('/_test')
@@ -57,7 +57,7 @@ it('should redirect to the passwordless form if the token has not expired but al
 
     $this
         ->withSession([
-            AuthSession::PASSPHRASE            => 'passphrase',
+            AuthSession::PASSPHRASE => 'passphrase',
             AuthSession::PASSPHRASE_EXPIRATION => Carbon::parse('2020-01-01 12:05:00')->timestamp,
         ])
         ->get('/_test')

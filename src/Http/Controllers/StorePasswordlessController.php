@@ -23,7 +23,7 @@ final class StorePasswordlessController
 
             return redirect()
                 ->route('login')
-                ->withErrors(['passphrase' =>['Your passphrase has expired.']]);
+                ->withErrors(['passphrase' => ['Your passphrase has expired.']]);
         }
 
         if ($request->get('passphrase') !== Session::get(AuthSession::PASSPHRASE)) {

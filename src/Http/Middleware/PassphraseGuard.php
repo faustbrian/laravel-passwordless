@@ -16,7 +16,7 @@ final class PassphraseGuard
     {
         $passphrase = $request->session()->get(AuthSession::PASSPHRASE, null);
 
-        if (is_null($passphrase)) {
+        if (null === $passphrase) {
             return $next($request);
         }
 

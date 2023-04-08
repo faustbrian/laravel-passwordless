@@ -26,7 +26,7 @@ final class SendPassphrase extends Notification
 
     public function toMail()
     {
-        return (new MailMessage)
+        return (new MailMessage())
             ->subject('Your login passphrase for '.config('app.name'))
             ->line('Here is your login passphrase. It will expire after 15 minutes.')
             ->line($this->passphrase)
