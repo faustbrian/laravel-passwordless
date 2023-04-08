@@ -14,7 +14,6 @@ abstract class TestCase extends AbstractPackageTestCase
     protected function getRequiredServiceProviders(): array
     {
         return [
-            \Spatie\LaravelData\LaravelDataServiceProvider::class,
             \Laravel\Fortify\FortifyServiceProvider::class,
         ];
     }
