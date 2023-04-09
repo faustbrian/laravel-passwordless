@@ -30,7 +30,7 @@
         "nunomaduro/larastan": "^2.5",
         "orchestra/testbench": "^8.0",
         "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-laravel": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.0",
         "pestphp/pest-plugin-watch": "^2.0",
         "phpstan/extension-installer": "^1.2",
         "phpstan/phpstan-deprecation-rules": "^1.1",
