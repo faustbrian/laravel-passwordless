@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Illuminate\Support\Facades\Route;
 use BombenProdukt\Passwordless\Http\Controllers\StorePasswordlessController;
+use Illuminate\Support\Facades\Route;
 
 Route::view('/login/passwordless', 'passwordless-views::auth.passphrase')
     ->middleware('web')

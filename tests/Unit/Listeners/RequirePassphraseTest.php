@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Listeners;
 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Notification;
 use BombenProdukt\Passwordless\Listeners\RequirePassphrase;
 use BombenProdukt\Passwordless\Notifications\SendPassphrase;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Notification;
 use Tests\Fixtures\User;
 
 beforeEach(fn () => $this->subject = new RequirePassphrase());

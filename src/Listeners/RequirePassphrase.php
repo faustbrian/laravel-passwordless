@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace BombenProdukt\Passwordless\Listeners;
 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Session;
 use BombenProdukt\Passphrase\EFF;
 use BombenProdukt\Passwordless\Enums\AuthSession;
 use BombenProdukt\Passwordless\Notifications\SendPassphrase;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 final class RequirePassphrase
 {

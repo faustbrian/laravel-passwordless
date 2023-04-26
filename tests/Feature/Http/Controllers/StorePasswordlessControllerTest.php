@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Http\Controllers;
 
-use Carbon\Carbon;
-use Illuminate\Support\Facades\Route;
 use BombenProdukt\Passwordless\Enums\AuthSession;
 use BombenProdukt\Passwordless\Http\Controllers\StorePasswordlessController;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Route;
 
 it('should log out the user and clear the session if the passphrase has expired', function (): void {
     Route::middleware('web')->post('/_test', StorePasswordlessController::class);

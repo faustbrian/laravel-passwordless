@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace BombenProdukt\Passwordless;
 
-use Illuminate\Routing\Router;
-use Illuminate\Support\Facades\Event;
 use BombenProdukt\PackagePowerPack\Package\AbstractServiceProvider;
 use BombenProdukt\Passwordless\Http\Middleware\PassphraseGuard;
 use BombenProdukt\Passwordless\Listeners\RequirePassphrase;
+use Illuminate\Routing\Router;
+use Illuminate\Support\Facades\Event;
 
 final class ServiceProvider extends AbstractServiceProvider
 {

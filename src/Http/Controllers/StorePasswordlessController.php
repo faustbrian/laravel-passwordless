@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace BombenProdukt\Passwordless\Http\Controllers;
 
+use BombenProdukt\Passwordless\Enums\AuthSession;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Validation\ValidationException;
 use Laravel\Fortify\Contracts\LoginResponse;
-use BombenProdukt\Passwordless\Enums\AuthSession;
 
 final class StorePasswordlessController
 {

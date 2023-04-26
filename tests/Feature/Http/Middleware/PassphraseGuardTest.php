@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Http\Middleware;
 
-use Carbon\Carbon;
-use Illuminate\Support\Facades\Route;
 use BombenProdukt\Passwordless\Enums\AuthSession;
 use BombenProdukt\Passwordless\Http\Middleware\PassphraseGuard;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Route;
 
 it('should fulfill the request if no passphrase is present', function (): void {
     Route::middleware(['web', PassphraseGuard::class])->get('/_test', fn () => ['key' => 'value']);
