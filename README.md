@@ -4,20 +4,6 @@
     </a>
 </p>
 
-<p align="center">
-    <a href="https://github.com/faustbrian/laravel-passwordless/actions">
-        <img src="https://badge.sh/github/check-runs/BombenProdukt/laravel-passwordless" alt="Checks" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-passwordless">
-        <img src="https://badge.sh/packagist/downloads/BombenProdukt/laravel-passwordless" alt="Downloads" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-passwordless">
-        <img src="https://badge.sh/packagist/version/BombenProdukt/laravel-passwordless" alt="Version" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-passwordless">
-        <img src="https://badge.sh/packagist/license/BombenProdukt/laravel-passwordless" alt="License" />
-    </a>
-</p>
 
 ## About Laravel Passwordless
 
