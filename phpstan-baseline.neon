@@ -1,0 +1,41 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method BombenProdukt\\\\Passwordless\\\\Http\\\\Controllers\\\\StorePasswordlessController\\:\\:__invoke\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Http/Controllers/StorePasswordlessController.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Passwordless\\\\Http\\\\Controllers\\\\StorePasswordlessController\\:\\:clearSession\\(\\) has parameter \\$request with no type specified\\.$#"
+			count: 1
+			path: src/Http/Controllers/StorePasswordlessController.php
+
+		-
+			message: "#^Cannot call method named\\(\\) on Illuminate\\\\Routing\\\\Route\\|null\\.$#"
+			count: 1
+			path: src/Http/Middleware/PassphraseGuard.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Passwordless\\\\Http\\\\Middleware\\\\PassphraseGuard\\:\\:handle\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Http/Middleware/PassphraseGuard.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Passwordless\\\\Listeners\\\\RequirePassphrase\\:\\:handle\\(\\) has parameter \\$event with no type specified\\.$#"
+			count: 1
+			path: src/Listeners/RequirePassphrase.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Passwordless\\\\Notifications\\\\SendPassphrase\\:\\:toMail\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Notifications/SendPassphrase.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Passwordless\\\\Notifications\\\\SendPassphrase\\:\\:via\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Notifications/SendPassphrase.php
+
+		-
+			message: "#^Cannot access offset 'router' on Illuminate\\\\Contracts\\\\Foundation\\\\Application\\.$#"
+			count: 1
+			path: src/ServiceProvider.php
