@@ -1,0 +1,27 @@
+{
+    "symbol-whitelist": [
+        "array",
+        "bool",
+        "false",
+        "int",
+        "null",
+        "self",
+        "string",
+        "true",
+        "config",
+        "Illuminate\\Auth\\Events\\Login",
+        "Illuminate\\Auth\\Events\\Registered",
+        "Illuminate\\Bus\\Queueable",
+        "Illuminate\\Http\\Request",
+        "Illuminate\\Notifications\\Messages\\MailMessage",
+        "Illuminate\\Notifications\\Notification",
+        "Illuminate\\Support\\Facades\\Auth",
+        "Illuminate\\Support\\Facades\\Event",
+        "Illuminate\\Support\\Facades\\Session",
+        "Illuminate\\Validation\\ValidationException",
+        "Laravel\\Fortify\\Contracts\\LoginResponse",
+        "now",
+        "redirect",
+        "resolve"
+    ]
+}

@@ -1,0 +1,76 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passwordless\\\\Http\\\\Controllers\\\\StorePasswordlessController\\:\\:__invoke\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Http/Controllers/StorePasswordlessController.php
+
+		-
+			message: "#^Cannot call method named\\(\\) on Illuminate\\\\Routing\\\\Route\\|null\\.$#"
+			count: 1
+			path: src/Http/Middleware/PassphraseGuard.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passwordless\\\\Http\\\\Middleware\\\\PassphraseGuard\\:\\:handle\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Http/Middleware/PassphraseGuard.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passwordless\\\\Listeners\\\\RequirePassphrase\\:\\:handle\\(\\) has parameter \\$event with no type specified\\.$#"
+			count: 1
+			path: src/Listeners/RequirePassphrase.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passwordless\\\\Notifications\\\\SendPassphrase\\:\\:toMail\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Notifications/SendPassphrase.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passwordless\\\\Notifications\\\\SendPassphrase\\:\\:via\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Notifications/SendPassphrase.php
+
+		-
+			message: "#^Cannot access offset 'router' on Illuminate\\\\Contracts\\\\Foundation\\\\Application\\.$#"
+			count: 1
+			path: src/ServiceProvider.php
+
+		-
+			message: "#^Call to an undefined method PHPUnit\\\\Framework\\\\TestCase\\:\\:withSession\\(\\)\\.$#"
+			count: 3
+			path: tests/Feature/Http/Controllers/StorePasswordlessControllerTest.php
+
+		-
+			message: "#^Call to an undefined method PHPUnit\\\\Framework\\\\TestCase\\:\\:get\\(\\)\\.$#"
+			count: 1
+			path: tests/Feature/Http/Middleware/PassphraseGuardTest.php
+
+		-
+			message: "#^Call to an undefined method PHPUnit\\\\Framework\\\\TestCase\\:\\:withSession\\(\\)\\.$#"
+			count: 3
+			path: tests/Feature/Http/Middleware/PassphraseGuardTest.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Method Tests\\\\TestCase\\:\\:getRequiredServiceProviders\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: "#^Access to an undefined property PHPUnit\\\\Framework\\\\TestCase\\:\\:\\$subject\\.$#"
+			count: 3
+			path: tests/Unit/Listeners/RequirePassphraseTest.php
+
+		-
+			message: "#^Access to an undefined property PHPUnit\\\\Framework\\\\TestCase\\:\\:\\$subject\\.$#"
+			count: 3
+			path: tests/Unit/Notifications/SendPassphraseTest.php

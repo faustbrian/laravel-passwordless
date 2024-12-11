@@ -1,0 +1,64 @@
+{
+    "name": "basecodeoy/passwordless",
+    "description": "A package to easily provide passwordless logins with Laravel.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "BaseCode Oy",
+        "laravel",
+        "passwordless"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/basecodeoy/passwordless",
+    "support": {
+        "issues": "https://github.com/basecodeoy/passwordless/issues",
+        "source": "https://github.com/basecodeoy/passwordless",
+        "security": "https://github.com/basecodeoy/passwordless/blob/main/.github/SECURITY.md"
+    },
+    "require": {
+        "php": "^8.3",
+        "basecodeoy/crate": "^1.0",
+        "basecodeoy/passphrase": "^1.1.0",
+        "illuminate/contracts": "^11.0",
+        "nesbot/carbon": "^2.72"
+    },
+    "require-dev": {
+        "basecodeoy/standards": "^1.1.1",
+        "laravel/fortify": "^1.25.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BaseCodeOy\\Passwordless\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        },
+        "audit": {
+            "abandoned": "report"
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BaseCodeOy\\Passwordless\\ServiceProvider"
+            ]
+        }
+    }
+}
