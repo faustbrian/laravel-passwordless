@@ -26,11 +26,11 @@
         "basecodeoy/crate": "^1.0",
         "basecodeoy/passphrase": "^1.1.0",
         "illuminate/contracts": "^11.0",
-        "nesbot/carbon": "^2.72"
+        "nesbot/carbon": "^2.72.6"
     },
     "require-dev": {
         "basecodeoy/standards": "^1.1.1",
-        "laravel/fortify": "^1.25.1"
+        "laravel/fortify": "^1.25.3"
     },
     "autoload": {
         "psr-4": {
